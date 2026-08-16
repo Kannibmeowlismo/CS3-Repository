@@ -1,49 +1,68 @@
-Annex A
-Computational Thinking Exercise: "Smart School Canteen Queue"
+CS 3 Portfolio
+# Activity 1: Computational Thinking Exercise
 
-Section: __________________________________ Score:____________
+Group Members:
+- Kristielle Garcia
+- Kzyra Gumabon
+- Yazmin Mundo
 
-C# / Name:_________________________________ Date: _____________
+## Main Problem: 
+- The school canteen is always crowded by students due to slow process of serving.
 
+## Sub-Problems:
+1. The canteen has slow serving processes and is crowded.
+2. Students take too long to order their food.
+3. The cashier has to manually compute totals and give change.
+4. There is no system to track which food items are running out.
 
-Scenario
+## Defining Computational Thinking Approaches
+Sub-Problem 1: The canteen has slow serving processes and is crowded.
 
-The PSHS school canteen is small and often gets crowded during lunch break. Students line up to buy food, but the process is slow because:
+CT Skill: Decomposition
 
-Some students take too long to decide what to order.
-The cashier has to manually calculate totals and give change.
-There is no system to track which food items are running out.
-Your group’s task is to decompose this problem into smaller, manageable parts that could be solved with computational thinking (CT) Skills.
+Solution: Divide the canteen processes into smaller steps.
 
-Step 1: Identify the Big Problem
+Sub-Problem 2: Students take too long to order their food.
 
-Main Problem: _____________________________________________________
-_________________________________________________________________
-_________________________________________________________________
+CT Skill: Abstraction
 
-Step 2: Identify three to four Sub-Problems
-Please list possible sub-problems:
+Solution: Display a simple digital menu where it is easily seen and accessible for everyone, along with its prices so students already know their order before proceeding to pick their food.
 
-1. ___________________________________________________________
-_____________________________________________________________
+Sub-Problem 3: The cashier has to manually compute totals and give change.
 
-2. ___________________________________________________________
-_____________________________________________________________
+CT Skill: Algorithm
 
-3. ___________________________________________________________
-_____________________________________________________________
+Solution: We suggest creating a program that will send the students’ order to the cashier, and automatically compute the total and their change.
 
-4. ___________________________________________________________
-_____________________________________________________________
+Sub-Problem 4: There is no system to track which food items are running out.
 
-Step 3: Define Computational Thinking Approaches
-For each sub-problem, apply CT skills:
+CT Skill: Logical Thinking
 
-Sub-Problem
+Solution: Program a system where it monitors each food item, identifying whether it’s out of supply or not. Create an “alarm” which alerts the staff when it is running out. Also display the quantity of items sold and the remaining.
 
-CT Skill
+### Pseudocode
 
-Example Solution
-
- Step 4: Draw a flowchart or write a pseudocode for the identified sub-problem
- ![My flowchart](../images/flowchart.PNG "My flowchart")
+START
+  
+    CREATE order = empty list
+    CREATE add = “NONE”
+    CREATE total_price = 0
+    
+    REPEAT
+        OUTPUT menu_items, price_ items
+        INPUT student_order
+  
+        IF student_ order is available THE
+           ADD student_order to order
+           total_price = total price + order
+        ELSE
+           OUTPUT “Food item is unavailable. Please choose another item.”
+        END IF
+    
+           INPUT “Do you want to choose another item?”
+  
+           UNTIL add = “NO”
+                
+           OUTPUT order, total_price
+                
+           END
